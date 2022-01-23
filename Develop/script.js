@@ -29,8 +29,8 @@ generateBtn.addEventListener("click", writePassword);
 //prompt for password length
 function generatePassword() {
  var passwordLength = parseInt(window.prompt("Type a number between 8 and 128 for password length."));
- if (passwordLength >128 || passwordLength < 8) {
-  return null;
+ if (passwordLength <128 || passwordLength > 8) {
+  window.prompt("You must type in a number between 8 and 128.");
  }
 
 
